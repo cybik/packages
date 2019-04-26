@@ -123,7 +123,8 @@ popd
 
 pushd distribution
 
-/usr/local/bin/packagesbuild -v Packages.pkgproj
+chmod 755 build/packagesbuild
+build/packagesbuild -v Packages.pkgproj
 
 ## Create the disk image
 
