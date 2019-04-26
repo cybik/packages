@@ -275,8 +275,8 @@ int main(int argc, const char * argv[])
 										   
 										   // A COMPLETER
 									   }];
-		
-		[[NSRunLoop mainRunLoop] run];
+        dispatch_main();
+		//[[NSRunLoop mainRunLoop] run];
 	}
 	
     return EXIT_FAILURE;
